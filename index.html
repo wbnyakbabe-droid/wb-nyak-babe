@@ -3,59 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Warung Nasi Betawi Nyak & Babe</title>
+
+<title>Warung Betawi WB</title>
 
 <style>
 body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f7f4ec;
-text-align:center;
+    font-family: Arial, sans-serif;
+    background:#fff8ed;
+    margin:0;
+    color:#333;
 }
 
 header{
-background:#0f5132;
-color:white;
-padding:25px;
+    background:#5b2c06;
+    color:white;
+    text-align:center;
+    padding:25px;
 }
 
-h1{
-margin:0;
+header h1{
+    margin:0;
+    font-size:32px;
 }
 
-a.button{
-display:inline-block;
-margin:10px;
-padding:12px 20px;
-background:#198754;
-color:white;
-text-decoration:none;
-border-radius:8px;
+header p{
+    margin-top:10px;
+}
+
+.container{
+    padding:20px;
 }
 
 .menu{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-padding:25px;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-.card{
-background:white;
-border-radius:12px;
-padding:15px;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
+.menu h2{
+    color:#5b2c06;
+    margin:0;
 }
 
-.card img{
-width:100%;
-border-radius:10px;
+.harga{
+    color:#d35400;
+    font-size:20px;
+    font-weight:bold;
 }
 
-.price{
-font-size:22px;
-color:#0f5132;
-font-weight:bold;
+button{
+    background:#25D366;
+    border:none;
+    padding:12px 20px;
+    border-radius:25px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.lokasi{
+    background:#4285F4;
+    margin-top:10px;
+}
+
+.footer{
+    text-align:center;
+    padding:20px;
+    background:#5b2c06;
+    color:white;
 }
 </style>
 
@@ -64,50 +81,110 @@ font-weight:bold;
 <body>
 
 <header>
+<h1>🍽️ WARUNG BETAWI WB</h1>
+<p>Masakan Khas Betawi • Cita Rasa Rumahan</p>
 
-<h1>WARUNG NASI BETAWI NYAK & BABE</h1>
+<a href="https://wa.me/6287864882777?text=Halo%20Warung%20Betawi%20WB,%20saya%20ingin%20pesan%20menu"
+target="_blank">
+<button>
+🟢 Pesan via WhatsApp
+</button>
+</a>
 
-<p>Masakan Betawi Rumahan</p>
+<br>
 
-<a class="button" href="https://maps.app.goo.gl/7LFPjTtanT68ZM718">📍 Google Maps</a>
-
-<a class="button" href="https://wa.me/6287864882777">📞 WhatsApp</a>
+<a href="https://maps.app.goo.gl/7LFPjTtanT68ZM718"
+target="_blank">
+<button class="lokasi">
+📍 Lokasi Warung
+</button>
+</a>
 
 </header>
 
+
+<div class="container">
+
+
 <div class="menu">
+<h2>🐟 Gabus Pucung</h2>
+<p>Ikan gabus dengan kuah pucung khas Betawi yang gurih dan kaya rempah.</p>
+<p class="harga">Rp 35.000</p>
 
-<div class="card">
-<h2>Sop Tulang Iga</h2>
-<p class="price">Rp35.000</p>
+<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Gabus%20Pucung%20Rp35000"
+target="_blank">
+<button>Pesan Sekarang</button>
+</a>
 </div>
 
-<div class="card">
-<h2>Gabus Pucung</h2>
-<p class="price">Rp35.000</p>
+
+<div class="menu">
+<h2>🍖 Sop Tulang Iga</h2>
+<p>Sop tulang iga dengan kuah hangat dan rasa rempah khas rumahan.</p>
+<p class="harga">Rp 35.000</p>
+
+<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Sop%20Tulang%20Iga%20Rp35000"
+target="_blank">
+<button>Pesan Sekarang</button>
+</a>
 </div>
 
-<div class="card">
-<h2>Bandeng Pesmol</h2>
-<p class="price">Rp13.000</p>
+
+<div class="menu">
+<h2>🐟 Bandeng Pesmol</h2>
+<p>Ikan bandeng dengan bumbu pesmol khas Betawi.</p>
+<p class="harga">Rp 15.000</p>
+
+<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Bandeng%20Pesmol%20Rp15000"
+target="_blank">
+<button>Pesan Sekarang</button>
+</a>
 </div>
 
-<div class="card">
-<h2>Ikan Kembung Bumbu Acar</h2>
-<p class="price">Rp10.000</p>
+
+<div class="menu">
+<h2>🐟 Kembung Bumbu Acar</h2>
+<p>Ikan kembung dengan bumbu acar segar dan gurih.</p>
+<p class="harga">Rp 12.000</p>
+
+<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Kembung%20Bumbu%20Acar%20Rp12000"
+target="_blank">
+<button>Pesan Sekarang</button>
+</a>
 </div>
 
-<div class="card">
-<h2>Urab</h2>
-<p class="price">Rp5.000</p>
+
+<div class="menu">
+<h2>🥗 Urab</h2>
+<p>Sayuran segar dengan kelapa berbumbu khas Nusantara.</p>
+<p class="harga">Rp 6.000</p>
+
+<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Urab%20Rp6000"
+target="_blank">
+<button>Pesan Sekarang</button>
+</a>
 </div>
 
-<div class="card">
-<h2>Sambal Goreng Kentang</h2>
-<p class="price">Rp5.000</p>
+
+<div class="menu">
+<h2>🥔 Sambal Goreng Kentang</h2>
+<p>Kentang dengan sambal goreng pedas gurih.</p>
+<p class="harga">Rp 6.000</p>
+
+<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Sambal%20Goreng%20Kentang%20Rp6000"
+target="_blank">
+<button>Pesan Sekarang</button>
+</a>
 </div>
 
+
 </div>
+
+
+<div class="footer">
+© 2026 Warung Betawi WB
+</div>
+
 
 </body>
 </html>
