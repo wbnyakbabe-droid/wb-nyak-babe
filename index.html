@@ -7,98 +7,201 @@
 <title>Warung Betawi WB</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    background:#fff8ed;
-    margin:0;
-    color:#333;
+
+*{
+box-sizing:border-box;
 }
+
+body{
+margin:0;
+font-family:'Segoe UI',Arial,sans-serif;
+background:#fff7e6;
+color:#333;
+}
+
+
+/* HEADER */
 
 header{
-    background:#5b2c06;
-    color:white;
-    text-align:center;
-    padding:25px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1604908176997-125f25cc6f3d");
+background-size:cover;
+background-position:center;
+padding:60px 20px;
+text-align:center;
+color:white;
 }
+
+
+.logo{
+font-size:60px;
+}
+
 
 header h1{
-    margin:0;
-    font-size:32px;
+font-size:38px;
+margin:10px 0;
 }
+
 
 header p{
-    margin-top:10px;
+font-size:18px;
+line-height:1.5;
 }
+
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:14px 25px;
+margin:8px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+
+.wa{
+background:#25D366;
+}
+
+
+.maps{
+background:#4285F4;
+}
+
+
+
+/* CONTENT */
 
 .container{
-    padding:20px;
+max-width:900px;
+margin:auto;
+padding:20px;
 }
+
+
+.about{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+
+.about h2{
+color:#5b2c06;
+}
+
+
+
+/* MENU */
 
 .menu{
-    background:white;
-    border-radius:15px;
-    padding:20px;
-    margin-bottom:15px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+background:white;
+padding:22px;
+border-radius:20px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
 }
+
 
 .menu h2{
-    color:#5b2c06;
-    margin:0;
+color:#5b2c06;
 }
+
+
+.deskripsi{
+line-height:1.6;
+}
+
 
 .harga{
-    color:#d35400;
-    font-size:20px;
-    font-weight:bold;
+font-size:22px;
+font-weight:bold;
+color:#d35400;
 }
 
-button{
-    background:#25D366;
-    border:none;
-    padding:12px 20px;
-    border-radius:25px;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
+
+.order{
+display:inline-block;
+background:#5b2c06;
+color:white;
+padding:12px 22px;
+border-radius:25px;
+text-decoration:none;
 }
 
-.lokasi{
-    background:#4285F4;
-    margin-top:10px;
+
+/* FLOAT WA */
+
+.float-wa{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px #999;
 }
+
+
+
+/* FOOTER */
 
 .footer{
-    text-align:center;
-    padding:20px;
-    background:#5b2c06;
-    color:white;
+background:#5b2c06;
+color:white;
+text-align:center;
+padding:25px;
 }
+
+
 </style>
 
 </head>
 
+
 <body>
 
+
 <header>
-<h1>🍽️ WARUNG BETAWI WB</h1>
-<p>Masakan Khas Betawi • Cita Rasa Rumahan</p>
 
-<a href="https://wa.me/6287864882777?text=Halo%20Warung%20Betawi%20WB,%20saya%20ingin%20pesan%20menu"
+<div class="logo">
+🍽️
+</div>
+
+<h1>WARUNG BETAWI WB</h1>
+
+<p>
+Masakan Khas Betawi Asli<br>
+Cita Rasa Rumahan yang Menggugah Selera
+</p>
+
+
+<a class="btn wa"
+href="https://wa.me/6287864882777?text=Halo%20Warung%20Betawi%20WB,%20saya%20ingin%20pesan%20menu"
 target="_blank">
-<button>
-🟢 Pesan via WhatsApp
-</button>
+
+🟢 Pesan WhatsApp
+
 </a>
 
-<br>
 
-<a href="https://maps.app.goo.gl/7LFPjTtanT68ZM718"
+<a class="btn maps"
+href="https://maps.app.goo.gl/7LFPjTtanT68ZM718"
 target="_blank">
-<button class="lokasi">
+
 📍 Lokasi Warung
-</button>
+
 </a>
+
 
 </header>
 
@@ -106,85 +209,201 @@ target="_blank">
 <div class="container">
 
 
+<div class="about">
+
+<h2>Tentang Warung WB</h2>
+
+<p>
+Warung Betawi WB menyediakan masakan khas Betawi
+dengan resep tradisional dan cita rasa rumahan.
+</p>
+
+<p>
+📍 Jl. Rawa Bambu RT 005 RW 016<br>
+Samping ZEA Kost
+</p>
+
+</div><!-- MENU -->
+
 <div class="menu">
+
 <h2>🐟 Gabus Pucung</h2>
-<p>Ikan gabus dengan kuah pucung khas Betawi yang gurih dan kaya rempah.</p>
-<p class="harga">Rp 35.000</p>
 
-<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Gabus%20Pucung%20Rp35000"
+<p class="deskripsi">
+Ikan gabus dengan kuah pucung khas Betawi,
+gurih dan kaya rempah.
+</p>
+
+<p class="harga">
+Rp 35.000
+</p>
+
+<a class="order"
+href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Gabus%20Pucung%20Rp35000"
 target="_blank">
-<button>Pesan Sekarang</button>
+
+Pesan Sekarang
+
 </a>
+
 </div>
 
 
+
 <div class="menu">
+
 <h2>🍖 Sop Tulang Iga</h2>
-<p>Sop tulang iga dengan kuah hangat dan rasa rempah khas rumahan.</p>
-<p class="harga">Rp 35.000</p>
 
-<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Sop%20Tulang%20Iga%20Rp35000"
+<p class="deskripsi">
+Sop tulang iga dengan kuah hangat
+dan rasa rempah khas rumahan.
+</p>
+
+<p class="harga">
+Rp 35.000
+</p>
+
+<a class="order"
+href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Sop%20Tulang%20Iga%20Rp35000"
 target="_blank">
-<button>Pesan Sekarang</button>
+
+Pesan Sekarang
+
 </a>
+
 </div>
 
 
+
 <div class="menu">
+
 <h2>🐟 Bandeng Pesmol</h2>
-<p>Ikan bandeng dengan bumbu pesmol khas Betawi.</p>
-<p class="harga">Rp 15.000</p>
 
-<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Bandeng%20Pesmol%20Rp15000"
+<p class="deskripsi">
+Ikan bandeng dengan bumbu pesmol khas Betawi.
+</p>
+
+<p class="harga">
+Rp 15.000
+</p>
+
+<a class="order"
+href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Bandeng%20Pesmol%20Rp15000"
 target="_blank">
-<button>Pesan Sekarang</button>
+
+Pesan Sekarang
+
 </a>
+
 </div>
 
 
+
 <div class="menu">
+
 <h2>🐟 Kembung Bumbu Acar</h2>
-<p>Ikan kembung dengan bumbu acar segar dan gurih.</p>
-<p class="harga">Rp 12.000</p>
 
-<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Kembung%20Bumbu%20Acar%20Rp12000"
+<p class="deskripsi">
+Ikan kembung dengan bumbu acar segar
+dan rasa gurih khas Nusantara.
+</p>
+
+<p class="harga">
+Rp 12.000
+</p>
+
+<a class="order"
+href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Kembung%20Bumbu%20Acar%20Rp12000"
 target="_blank">
-<button>Pesan Sekarang</button>
+
+Pesan Sekarang
+
 </a>
+
 </div>
 
 
+
 <div class="menu">
+
 <h2>🥗 Urab</h2>
-<p>Sayuran segar dengan kelapa berbumbu khas Nusantara.</p>
-<p class="harga">Rp 6.000</p>
 
-<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Urab%20Rp6000"
+<p class="deskripsi">
+Sayuran segar dengan kelapa berbumbu
+khas Nusantara.
+</p>
+
+<p class="harga">
+Rp 6.000
+</p>
+
+<a class="order"
+href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Urab%20Rp6000"
 target="_blank">
-<button>Pesan Sekarang</button>
+
+Pesan Sekarang
+
 </a>
+
 </div>
+
 
 
 <div class="menu">
+
 <h2>🥔 Sambal Goreng Kentang</h2>
-<p>Kentang dengan sambal goreng pedas gurih.</p>
-<p class="harga">Rp 6.000</p>
 
-<a href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Sambal%20Goreng%20Kentang%20Rp6000"
+<p class="deskripsi">
+Kentang dengan sambal goreng pedas gurih.
+</p>
+
+<p class="harga">
+Rp 6.000
+</p>
+
+<a class="order"
+href="https://wa.me/6287864882777?text=Saya%20ingin%20pesan%20Sambal%20Goreng%20Kentang%20Rp6000"
 target="_blank">
-<button>Pesan Sekarang</button>
+
+Pesan Sekarang
+
 </a>
-</div>
-
 
 </div>
 
+
+</div>
+
+
+<!-- WHATSAPP MELAYANG -->
+
+<a class="float-wa"
+href="https://wa.me/6287864882777?text=Halo%20Warung%20Betawi%20WB,%20saya%20ingin%20pesan"
+target="_blank">
+
+💬 Chat WhatsApp
+
+</a>
+
+
+
+<!-- FOOTER -->
 
 <div class="footer">
+
+<h3>WARUNG BETAWI WB</h3>
+
+<p>
+Kuliner Betawi Asli • Rasa Rumahan
+</p>
+
+<p>
 © 2026 Warung Betawi WB
+</p>
+
 </div>
 
 
 </body>
+
 </html>
